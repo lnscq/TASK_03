@@ -21,7 +21,7 @@ TASK_03/
 ├── video/
 │   └── video.mp4
 │   └── output.mp4
-└── build/
+└── build/   └──建立/   └──建立/   └──建立/
 ```
 
 ## 实现思路
@@ -83,13 +83,13 @@ y(t) = y₀ + (v_y₀ + g/k)/k × (1 - e^(-k×t)) - (g/k) × t
 ceres::AutoDiffCostFunction<TrajectoryResidual, 2, 4>
 
 // 参数边界约束
-problem.SetParameterLowerBound(params, 2, 100.0);   // g_min
-problem.SetParameterUpperBound(params, 2, 1000.0);  // g_max
-problem.SetParameterLowerBound(params, 3, 0.01);    // k_min
-problem.SetParameterUpperBound(params, 3, 1.0);     // k_max
+problem.SetParameterLowerBound(params, 2, 100.0);   // g_min问题。SetParameterLowerBound(params, 2,100.0)；/ / g_min问题。SetParameterLowerBound(params, 2,100.0)；// g_min问题。SetParameterLowerBound（params, 2,100.0）
+problem.SetParameterUpperBound(params, 2, 1000.0);  // g_max问题。SetParameterUpperBound(params, 2,1000 .0)；/ / g_max问题。SetParameterUpperBound(params, 2,1000 .0)；// g_max问题。SetParameterUpperBound（params, 2,1000 .0）
+problem.SetParameterLowerBound(params, 3, 0.01);    // k_min问题。SetParameterLowerBound(params, 3, 0.01)；/ / k_min
+problem.SetParameterUpperBound(params, 3, 1.0);     // k_max问题。SetParameterUpperBound(params, 3, 1.0)；/ / k_max
 
 // 使用稠密QR分解求解
-options.linear_solver_type = ceres::DENSE_QR;
+options.linear_solver_type = ceres::DENSE_QR;选项。linear_solver_type = ceres::DENSE_QR；
 ```
 
 **优化过程：**
@@ -145,11 +145,11 @@ Ceres参数优化
 
 ### 结果
 
-=== FITTING RESULTS ===   ===拟合结果===
-Initial velocity X: 252.975 px/s初速度X: 252.975 px/s
-Initial velocity Y: 346.062 px/s初速度Y: 346.062 px/s
-Gravity: 497.3 px/s²   重力：497.3 px/s²
-Drag coefficient: 0.065969 1/s阻力系数：0.065969 1/s
-Average fitting error: 1.31329 pixels平均拟合误差：1.31329像素
+- === FITTING RESULTS ===   ===拟合结果===
+- Initial velocity X: 252.975 px/s初速度X: 252.975 px/s
+- Initial velocity Y: 346.062 px/s初速度Y: 346.062 px/s
+- Gravity: 497.3 px/s²   重力：497.3 px/s²
+- Drag coefficient: 0.065969 1/s阻力系数：0.065969 1/s
+- Average fitting error: 1.31329 pixels平均拟合误差：1.31329像素
 
 ![截图](./TASK_03/video/img.png)
