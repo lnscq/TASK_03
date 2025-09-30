@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/danny/TASK_03/build",
+  "command": "/usr/bin/g++ -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=\"\" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=\"\" -I/usr/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/TASK_03.dir/src/extract_ball_data.cpp.o -c /home/danny/TASK_03/src/extract_ball_data.cpp",
+  "file": "/home/danny/TASK_03/src/extract_ball_data.cpp"
+}
+]

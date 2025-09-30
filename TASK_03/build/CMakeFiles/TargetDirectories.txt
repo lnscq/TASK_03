@@ -1,0 +1,3 @@
+/home/danny/TASK_03/build/CMakeFiles/TASK_03.dir
+/home/danny/TASK_03/build/CMakeFiles/edit_cache.dir
+/home/danny/TASK_03/build/CMakeFiles/rebuild_cache.dir
